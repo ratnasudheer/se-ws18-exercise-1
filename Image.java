@@ -10,9 +10,8 @@ public class Image {
 	public byte[]data;
 	
 // creating a public byte array to store 24-bit RGB(3 byte per pixel	
-public Image() {
-	int height;
-	int width;
+public Image(int width,int height) {
+	
 		this.width = width;
 		this.height =height;
 		// Multiplying the  RGB with 3
@@ -25,8 +24,8 @@ public Image() {
 
 //Created a method named as set which sets a single pixel at
 //given position represented by value
-public void set() {
-	int x; int y; int value;
+public void set(int x, int y, int value) {
+	
 	
 	// split the 4 byte integer into its RGB
 	
