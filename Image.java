@@ -8,7 +8,7 @@ public class Image {
 	 int width ;
 	 int height;
 	public byte[]data;
-	String header;
+	private String header="";
 	
 // creating a public byte array to store 24-bit RGB(3 byte per pixel	
 public Image(int width,int height) {
@@ -43,7 +43,7 @@ public void set(int x, int y, int value) {
 			
 		}
 // Created a method name as write that writes the image data into file
-public void write(String filename) throws Exception {
+public void write(String filename) throws FileNotFoundException {
 	 
 	FileOutputStream out = new FileOutputStream(filename);
 	 try {
